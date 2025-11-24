@@ -49,9 +49,9 @@
 .cover {
   position: relative;
   display: block;
-  height: 757px;
+  min-height: 757px;
   margin-bottom: 180px;
-  padding: 165px 50px 50px;
+  padding: 165px 50px 0;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -119,7 +119,6 @@
 }
 
 .lots {
-  min-height: 723px;
   margin-right: 24px;
   margin-bottom: 120px;
   margin-left: 24px;
@@ -150,6 +149,9 @@
   min-height: 596px;
   padding: 48px 40px 48px;
   color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .lots-list-item-title {
@@ -181,22 +183,13 @@
 
 .lots-list-item-film {
   background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .lots-list-item-book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 .lots-list-item-picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .lots-link {
