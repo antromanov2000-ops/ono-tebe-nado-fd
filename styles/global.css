@@ -43,9 +43,6 @@ address {
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
-}
-
-address {
   all: unset;
 }
 

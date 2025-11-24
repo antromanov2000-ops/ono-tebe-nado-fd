@@ -220,12 +220,12 @@
 
 .about-column_logo-container {
   display: flex;
-  justify-items: center; 
+  justify-items: center;
   align-items: center;
   width: 240px;
   height: 240px;
   margin-top: 35px;
-  border-radius: 50%; 
+  border-radius: 50%;
   background-color: black;
 }
 
@@ -242,7 +242,7 @@
   text-transform: uppercase;
 }
 
-.about_main-text{
+.about_main-text {
   font-size: 20px;
   line-height: 24px;
 }
