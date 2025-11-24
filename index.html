@@ -31,23 +31,23 @@
         >
       </a>
       <address class="address header__address">
-        <!--добавление ссылок в адрессе-->
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         наб. Принсенграхт 263-
         265, Амстердам
       </address>
     </header>
-    <main>
+    <main class="main">
       <section class="cover">
+        <div class="cover-overlay overlay"></div>
         <h1 class="cover_title">
           <span class="accent-span">оно</span>
           <span class="accent-span text-center">тебе</span>
           <span class="accent-span text-right">надо</span>
         </h1>
-        <div class="discription">
-          <p>Аукцион вещей, в которые никто не верил</p>
-          <button class="button">сделать ставку</button>
+        <div class="cover__discription">
+          <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
+          <button class="bet-button">сделать ставку</button>
         </div>
       </section>
       <section class="lots">
@@ -55,14 +55,14 @@
         <ul class="lots-list">
           <li class="lots-list-item lots-list-item-film">
             <a class="lots-list-link" href="#0">
-              <article>Фильм режиссёра, который бросил киношколу</article>
+              <article class="lots-list-link-article"><div class="overlay"></div><span class="lots-list-item-title">Фильм режиссёра, который бросил киношколу</span></article>
             </a>
             <span class="lots-main-text">Не просто бросил, а ушёл с первой лекции. Какой 
             была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</span>
           </li>
           <li class="lots-list-item lots-list-item-book">
             <a class="lots-list-link" href="#0">
-              <article>Книга, где описан один скучный день из жизни рекламного агента</article>
+              <article class="lots-list-link-article"><div class="overlay"></div><span class="lots-list-item-title">Книга, где описан один скучный день из жизни рекламного агента</span></article>
             </a>
             <span class="lots-main-text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. 
             В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. 
@@ -70,8 +70,8 @@
             </span>
           </li>
           <li class="lots-list-item lots-list-item-picture">
-            <a class="lots-list-link">
-              <article>Картина, которую повторит даже 5-летний сын маминой подруги</article>
+            <a class="lots-list-link" href="#0">
+              <article class="lots-list-link-article"><div class="overlay"></div><span class="lots-list-item-title">Картина, которую повторит даже 5-летний сын маминой подруги</span></article>
             </a>
             <span class="lots-main-text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. 
               Никаких полей, лесов, котиков... 
@@ -82,14 +82,17 @@
         <a class="lots-link" href="#0">посмотреть больше</a>
       </section>
       <section class="about">
-        <div class="about-column about-column-logo">
-          <img class="header_logo-image header_logo-image_white"
-          src="./images/logo-white.svg"
-          alt="белый логотип проекта">
+        <div class="about-column about-column_logo-container">
+          <div class="about-column about-column-logo">
+            <img class="header_logo-image header_logo-image_white"
+            src="./images/logo-white.svg"
+            alt="белый логотип проекта">
+          </div>
         </div>
         <div class="about-column about-column_main">
-          <h3>Об аукционе</h3>
+          <h2 class="about-title">Об аукционе</h2>
           <div class="about_main-text">
+            <div class="about_description-block">
             <p>
               Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. 
               Наши лоты вообще не должны были попасть ни на один аукцион. 
@@ -104,42 +107,43 @@
               Когда в эти вещи не верил никто, продолжали верить их создатели. 
               И сейчас эти лоты стали культовыми. 
             </p>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <address class="address">
-        <p>+9 999 555 5555</p>
-        <p>info@sobaka.ge</p>
-        <p>наб. Принсенграхт 263-</p>
-        <p>265, Амстердам</p>
+      <address class="address footer-address">
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        наб. Принсенграхт 263-265, 
+        Амстердам
       </address>
-      <nav class="menu">
-        <ul class="menu-list">
-          <li class="menu-item">
+      <nav class="menu-footer">
+        <ul class="menu-list-footer">
+          <li class="menu-item-footer">
             <a class="menu-link menu-list-active">главная</a>
           </li>
-          <li class="menu-item">
+          <li class="menu-item-footer">
             <a class="menu-link" href="#0">посмотреть лоты</a>
           </li>
-          <li class="menu-item">
+          <li class="menu-item-footer">
             <a class="menu-link" href="#0">об аукционе</a>
           </li>
         </ul>
       </nav>
       <div class="social-media">
         <a class="social-media_link" href="#0">
-          <img class="youtube_link"
+          <img class="youtube_link img-footer-link"
           src="./images/yt.svg"
           alt="ссылка на youtube">
         </a>
-        <a class="social-media_link" href="#0">
+        <a class="social-media_link img-footer-link" href="#0">
           <img class="vk_link"
           src="./images/vk.svg"
           alt="ссылка на vk">
         </a>
-        <a class="social-media_link" href="#0">
+        <a class="social-media_link img-footer-link" href="#0">
           <img class="pinterest_link"
           src="./images/pinterest.svg"
           alt="ссылка на pinterest">

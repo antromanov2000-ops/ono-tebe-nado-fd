@@ -7,7 +7,8 @@
 body {
   width: 1100px;
   margin: 0 auto;
-  font-family: Raleway, sans-serif;
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
 }
 
 h1,
@@ -36,10 +37,22 @@ img {
 button {
   font: inherit;
 }
-/*сброс адресных настроек*/
+
 address {
   margin: 0;
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
+}
+
+address {
+  all: unset;
+}
+
+.main {
+  position: relative;
+}
+
+ul {
+  all: unset;
 }
